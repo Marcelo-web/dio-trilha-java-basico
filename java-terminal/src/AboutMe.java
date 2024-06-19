@@ -22,5 +22,33 @@ public class AboutMe {
          *  2- Acessar a pasta bin : cd bin
          *  3- Inserir o comando java AboutMe Fulano DeTal 30 1.75 e tecle ENTER.
          */
+
+        /**
+         *  Terminal e argumentos (parte 3)
+         *  
+         *  Uma IDE pode também ser usada para representação da execução via terminal.
+         * 
+         *  Roteiro para execução no VSCode.
+         * 
+         *  1- No VSCode, ir em Run(Executar).
+         *  2- Depois em Add Configuration .
+         *  3- Adicionar uma estrutura json do tipo:
+         *  4-  {
+                "type": "java",
+                "request": "launch",
+                "mainClass": "AboutMe",
+                "args": [
+                    "Fulano",
+                    "DeTal",
+                    "30",
+                    "1.75"
+                ]
+            }
+            5- Perceba que nesta estrutura é usado o formado json e os argumentos para a função main são passados por meio de args contendo uma lista de valores correspondentes.
+            6- Executar a classe contendo o método main no VSCode.
+        
+            OBS: Caso queira alterar os dados passados, ir em na aba Run(Executar), depois em Open Configurations. 
+            No objeto json, mainClass recebe o nome da classe.
+         */
     }
 }
